@@ -1,6 +1,6 @@
 function Recommendations() {
   return (
-    <div className="container">
+    <div className="container recommendations-container">
       <h2>Recommendations</h2>
       <ul>
         <li>Use public transport</li>

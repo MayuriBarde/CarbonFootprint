@@ -12,7 +12,7 @@ function Calculator() {
   };
 
   return (
-    <div className="container">
+    <div className="container calculator-container">
       <h2>Carbon Footprint Calculator</h2>
 
       <TransportForm />

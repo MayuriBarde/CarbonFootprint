@@ -1,6 +1,6 @@
 function Reports() {
   return (
-    <div className="container">
+    <div className="container reports-container">
       <h2>Emission Report</h2>
       <ul>
         <li>Transport: 900 kg CO₂</li>
