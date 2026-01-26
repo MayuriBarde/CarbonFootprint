@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #1b5e20,
+    #388e3c,
+    #66bb6a,
+    #a5d6a7,
+    #dcedc8
+  );
+}
+
+/* Center container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px; /* for small screens */
+}
+
+/* Card */
+.login-card {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 100, 0, 0.15);
+  text-align: center;
+}
+
+/* Heading */
+.login-card h2 {
+  color: #2f7a2f;
+  font-size: 22px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #4d7c4d;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #cfe8cf;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  border-color: #4caf50;
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-card button:hover {
+  background-color: #3e8e41;
+}
+
+/* Links */
+.links {
+  margin-top: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #2f7a2f;
+  font-size: 14px;
+}
+
+.links p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 20px;
+  }
+
+  .login-card h2 {
+    font-size: 20px;
+  }
+
+  .login-card button {
+    font-size: 15px;
+  }
+  .login-card input{
+    width:90%;
+  }
+}
+
+/* 💻 Tablet responsiveness */
+@media (max-width: 768px) {
+  .login-card {
+    width: 90%;
+  }
+}
