@@ -1,0 +1,120 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+  align-items: center;
+   gap: 10px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+}
+
+.form-card {
+
+  background-color: #ffffff;
+  width: 700px;
+  max-width: 560px;
+  padding: 28px 32px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #33691e;
+}
+
+.diet-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.form-row label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #c5e1a5;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  border-color: #558b2f;
+}
+
+.form-row textarea {
+  resize: none;
+  min-height: 70px;
+}
+
+.submit-btn{
+
+  width: 100%;
+  background-color: #558b2f;
+  height: 40px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 12px;
+
+}
+
+
+.submit-btn:hover {
+  background-color: #33691e;
+}
+
+@media (max-width: 600px) {
+  .form-card {
+    padding: 22px 20px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+}
+
+/* .button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #33691e;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+   
+} */
+
+
+
+ #diet {
+  margin-top: 20px;
+}
+
+ #electricity {
+  margin-top: -120px;
+ }
+
+#transport {
+  margin-bottom:120px ;
+
+}
