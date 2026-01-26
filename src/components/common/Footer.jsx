@@ -1,55 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer mt-auto py-4 bg-dark text-light">
-      <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div className="mb-3 mb-md-0">
-          <h5 className="mb-0">EcoTracker</h5>
-          <small>© 2026 All rights reserved.</small>
+    <footer className="footer">
+      <div className="container footer-row">
+
+        {/* Brand */}
+        <div className="footer-brand">
+            
+          <strong>SustainX</strong>
+          <span>© 2026</span>
         </div>
 
-        <ul className="list-unstyled d-flex mb-3 mb-md-0">
-          <li className="mx-2">
-            <a href="/" className="text-light text-decoration-none">
-              Home
-            </a>
-          </li>
-          <li className="mx-2">
-            <a href="/about" className="text-light text-decoration-none">
-              About
-            </a>
-          </li>
-          <li className="mx-2">
-            <a href="/learn" className="text-light text-decoration-none">
-              Learn
-            </a>
-          </li>
-          <li className="mx-2">
-            <a href="/contact" className="text-light text-decoration-none">
-              Contact
-            </a>
-          </li>
+        {/* Navigation */}
+        <ul className="footer-nav">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/learn">Learn</Link></li>
+          <li><Link to="/dashboard">Dashboard</Link></li>
+          <li><Link to="/calculator">Calculator</Link></li>
+          <li><Link to="/reports">Reports</Link></li>
         </ul>
 
-        <div>
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-light mx-2"
-          >
+        {/* Social */}
+        <div className="footer-social">
+          <a href="https://github.com/MayuriBarde/CarbonFootprint" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
-          <a
-            href="https://linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-light mx-2"
-          >
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
         </div>
+
       </div>
     </footer>
   );

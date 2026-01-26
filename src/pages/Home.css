@@ -34,7 +34,7 @@
 .why-section {
   background: linear-gradient(135deg, #e8f5e9, #f1fff3);
   border-radius: 20px;
-  margin: 60px 5%;
+  margin: 70px 5%;
   padding: 80px 10%;
   margin-bottom: 0;
 }
@@ -42,7 +42,7 @@
   width: 80%;
   height: 1px;
   background: linear-gradient(to right, transparent, #2e7d32, transparent);
-  margin: 0px auto;
+  margin: 70px auto;
   opacity: 0.6;
 }
 
@@ -84,7 +84,7 @@
 
 /* CTA */
 .cta-section {
-  background: #198754;
+  background: #177b4d;
   color: white;
 }
 
@@ -93,7 +93,7 @@
   margin-top: 20px;
   padding: 12px 30px;
   background: white;
-  color: #198754;
+  color: #115d3a;
   font-weight: bold;
   border-radius: 25px;
   text-decoration: none;
