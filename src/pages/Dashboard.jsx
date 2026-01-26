@@ -7,7 +7,7 @@ function Dashboard() {
 
       {/* Page Header */}
       <div className="dashboard-header mb-5">
-          <h2>Carbon Emission Dashboard</h2>
+          <h1>Carbon Emission Dashboard</h1>
         <div className="header-accent">
           <p>
             A complete overview of your carbon footprint, emission sources,

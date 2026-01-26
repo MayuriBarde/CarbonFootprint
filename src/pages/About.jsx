@@ -1,57 +1,78 @@
 import React from "react";
+import "./About.css";
 
 const About = () => {
   return (
-    <div className="about-container">
-      <section className="about-hero">
-        <h1>About Our Platform</h1>
+    <div className="about-page">
+
+      <header className="about-header">
+        <h1>About the Platform</h1>
         <p>
-          This platform helps individuals understand, track, and reduce their
-          carbon footprint through accurate calculations and meaningful insights.
+          A smart system designed to help people understand, measure,
+          and reduce their carbon footprint using meaningful data.
         </p>
+      </header>
+
+      <section className="about-grid">
+        <div className="about-box">
+          <h2>What is a Carbon Footprint?</h2>
+          <p>
+            It represents the total greenhouse gas emissions produced
+            by daily human activities, measured in CO₂ equivalents.
+          </p>
+        </div>
+
+        <div className="about-box">
+          <h2>What Does This App Do?</h2>
+          <ul>
+            <li>Calculates emissions from daily activities</li>
+            <li>Shows insights using reports</li>
+            <li>Tracks footprint over time</li>
+            <li>Promotes sustainable habits</li>
+          </ul>
+        </div>
+
+        <div className="about-box">
+          <h2>How Calculations Work</h2>
+          <p>
+            The system uses verified emission factors and environmental
+            datasets to convert user inputs into emission values.
+          </p>
+        </div>
+
+        <div className="about-box">
+          <h2>Our Mission</h2>
+          <p>
+            To empower individuals with awareness and data so they
+            can make environmentally responsible decisions.
+          </p>
+        </div>
+
+        {/* NEW BOX 1 */}
+        <div className="about-box">
+          <h2>Who Can Use This Platform?</h2>
+          <p>
+            This platform is designed for students, individuals, and
+            organizations who want to understand their environmental
+            impact and take steps toward sustainability.
+          </p>
+        </div>
+
+        {/* NEW BOX 2 */}
+        <div className="about-box">
+          <h2>Why Carbon Tracking is Important</h2>
+          <p>
+            Tracking carbon emissions helps identify major impact areas,
+            supports informed decision-making, and enables measurable
+            progress toward environmental responsibility.
+          </p>
+        </div>
       </section>
 
-      <section className="about-section">
-        <h2>What is a Carbon Footprint?</h2>
-        <p>
-          A carbon footprint represents the total greenhouse gas emissions
-          caused directly or indirectly by human activities. These emissions
-          are typically measured in terms of carbon dioxide equivalents (CO₂e).
-        </p>
-      </section>
+      <footer className="about-note">
+        <p>Small choices today create a sustainable tomorrow 🌱</p>
+      </footer>
 
-      <section className="about-section">
-        <h2>What Does This Application Do?</h2>
-        <ul>
-          <li>Calculates your carbon footprint based on daily activities</li>
-          <li>Provides detailed reports and visual insights</li>
-          <li>Helps you track changes over time</li>
-          <li>Encourages sustainable and eco-friendly choices</li>
-        </ul>
-      </section>
-
-      <section className="about-section">
-        <h2>How Calculations Work</h2>
-        <p>
-          The calculations are based on standard emission factors and commonly
-          accepted environmental data. Inputs such as energy usage, transport,
-          and lifestyle choices are converted into estimated emissions.
-        </p>
-      </section>
-
-      <section className="about-section">
-        <h2>Our Mission</h2>
-        <p>
-          Our mission is to promote environmental awareness and empower people
-          to make informed decisions that contribute to a more sustainable future.
-        </p>
-      </section>
-
-      <section className="about-footer">
-        <p>
-          Together, small changes can create a big impact on our planet.
-        </p>
-      </section>
     </div>
   );
 };
