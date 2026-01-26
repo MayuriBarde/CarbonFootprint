@@ -1,0 +1,100 @@
+.home-container .carousel-inner img{
+    height: 450px;
+}
+
+.home-container .carousel-caption {
+    top: 20%;
+    bottom: auto;
+}  
+.home-container .carousel-caption h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-container .carousel-caption p{
+    font-size: 25px;
+}
+
+.home-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.home-section h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.home-section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* FEATURES */
+.why-section {
+  background: linear-gradient(135deg, #e8f5e9, #f1fff3);
+  border-radius: 20px;
+  margin: 60px 5%;
+  padding: 80px 10%;
+  margin-bottom: 0;
+}
+.section-divider {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #2e7d32, transparent);
+  margin: 0px auto;
+  opacity: 0.6;
+}
+
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  padding: 25px;
+  border-radius: 12px;
+  background: #f4f9f4;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* STEPS */
+.steps-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.step span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #198754;
+  color: white;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* CTA */
+.cta-section {
+  background: #198754;
+  color: white;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: white;
+  color: #198754;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+}

@@ -16,11 +16,11 @@ body {
 
 /* Card */
 .login-card {
-    background-color: #90e350;
+    background-color: #effdec;
     padding: 30px;
     width: 350px;
     max-width: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 100, 0, 0.45);
     text-align: center;
     color: black;
