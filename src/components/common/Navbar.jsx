@@ -4,9 +4,9 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark  fixed-top glass-navbar">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand text-dark" to="/">
           <img src="/src/assets/logo.png" alt="Logo" width="40" />
           SustainX
         </Link>
@@ -71,12 +71,6 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/login">
                 Login
-              </NavLink>
-            </li>
-
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/register">
-                Register
               </NavLink>
             </li>
           </ul>
