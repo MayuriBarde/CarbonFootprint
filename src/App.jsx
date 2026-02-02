@@ -3,8 +3,7 @@ import Navbar from "./components/common/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import LoginModal from "./pages/LoginModal";
 import About from "./pages/About";
 import History from "./pages/History";
 import Learn from "./pages/Learn";
@@ -19,8 +18,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/loginModal" element={<LoginModal />} />
         <Route path="/about" element={<About />} />
         <Route path="/history" element={<History />} />
         <Route path="/learn" element={<Learn />} />

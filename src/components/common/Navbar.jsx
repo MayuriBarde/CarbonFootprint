@@ -1,82 +1,92 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import './Navbar.css'
+import LoginModal from "../../pages/LoginModal.jsx";
+import RegisterModal from "../../pages/RegisterModal.jsx";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark  fixed-top glass-navbar">
-      <div className="container">
-        <Link className="navbar-brand text-dark" to="/">
-          <img src="/src/assets/logo.png" alt="Logo" width="40" />
-          SustainX
-        </Link>
+    <>
+      <nav className="navbar navbar-expand-lg navbar-dark  fixed-top glass-navbar">
+        <div className="container">
+          <Link className="navbar-brand text-dark" to="/">
+            <img src="/src/assets/logo.png" alt="Logo" width="40" />
+            SustainX
+          </Link>
 
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/" end>
-                Home
-              </NavLink>
-            </li>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/" end>
+                  Home
+                </NavLink>
+              </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
-                About
-              </NavLink>
-            </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/about">
+                  About
+                </NavLink>
+              </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/learn">
-                Learn
-              </NavLink>
-            </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/learn">
+                  Learn
+                </NavLink>
+              </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/history">
-                History
-              </NavLink>
-            </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/history">
+                  History
+                </NavLink>
+              </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/dashboard">
-                Dashboard
-              </NavLink>
-            </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/dashboard">
+                  Dashboard
+                </NavLink>
+              </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/calculator">
-                Calculator
-              </NavLink>
-            </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/calculator">
+                  Calculator
+                </NavLink>
+              </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/reports">
-                Reports
-              </NavLink>
-            </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/reports">
+                  Reports
+                </NavLink>
+              </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/login">
+              <button
+                className="btn btn-outline-success"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >
                 Login
-              </NavLink>
-            </li>
-          </ul>
+              </button>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+
+      </nav>
+      <LoginModal />
+      <RegisterModal/>
+    </>
+    
   );
 };
 
